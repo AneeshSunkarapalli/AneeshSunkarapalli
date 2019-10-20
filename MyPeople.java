@@ -15,3 +15,6 @@ public class MyPeople {
 		}
 	}
 }
+//Assignment was to create an array of 10 people you know, first and last. 
+//Then, seperate the array into two different arrays, one with only first names and one with only last names. 
+//Print the two arrays to make it look like you were printing only the first array

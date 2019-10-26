@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class StringExercise6 {
+
+	public static void main(String[] args) {
+		String name;
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Enter password");
+		name = scan.nextLine();
+		boolean hasUpperCase = !name.equals(name.toLowerCase());
+		boolean hasLowerCase = !name.equals(name.toUpperCase());
+
+		while ((name.length() < 7) || (!hasUpperCase) || (!hasLowerCase) || (!name.matches(".*\\d+.*"))) {
+			System.out.println("That password is not acceptable.");
+			System.out.println("Enter your password:");
+			Scanner scan2 = new Scanner(System.in);
+			name = scan2.nextLine();
+			hasUpperCase = !name.equals(name.toLowerCase());
+			hasLowerCase = !name.equals(name.toUpperCase());
+		}
+		System.out.println("Acceptable password.");
+	}
+}

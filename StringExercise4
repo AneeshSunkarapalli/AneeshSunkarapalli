@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class StringExercise4 {
+
+	public static void main(String[] args) {
+		String givenname;
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Enter a name");
+		givenname = scan.nextLine();
+
+		String firstName = givenname.substring(0, givenname.indexOf(""));
+		if (givenname.startsWith("A"))
+			System.out.println("Mrs." + givenname);
+			else if(givenname.startsWith("B"))
+			System.out.println("Mrs." + givenname);
+			else if(givenname.startsWith("C"))
+			System.out.println("Mrs." + givenname);
+			else if(givenname.startsWith("E"))
+			System.out.println("Mr." + givenname);
+			else if(givenname.startsWith("F"))
+			System.out.println("Mr." + givenname);
+			else if(givenname.startsWith("G"))
+			System.out.println("Mr."+givenname);
+			else;
+				System.out.println(givenname);
+	}
+
+}

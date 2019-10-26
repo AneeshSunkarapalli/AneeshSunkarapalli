@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class StringExercise1 {
+
+	public static void main(String[] args) {
+		String fullname;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter a first and last name");
+		fullname = scan.nextLine();
+		
+		String firstName = fullname.substring(0, fullname.indexOf(""));
+		String lastName = fullname.substring(fullname.indexOf(""));
+	
+		System.out.print(firstName + "" + lastName.toUpperCase());
+	}
+
+}aa

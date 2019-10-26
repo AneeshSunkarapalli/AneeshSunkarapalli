@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class StringExercise3 {
+
+	public static void main(String[] args) {
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Enter a line");
+	String line = scan.nextLine();
+		
+	if(line.substring(0,2).equals("//"))
+			System.out.println(line);
+	else
+		System.out.println("This line cannot be printed");
+	}
+}
+
+	
+	

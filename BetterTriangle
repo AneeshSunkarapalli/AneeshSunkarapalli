@@ -1,0 +1,24 @@
+
+public class BetterTriangle {
+	double a;
+	double b;
+	double c;
+	
+	public BetterTriangle(double s1, double s2, double s3) {
+		this.a = s1; 
+		this.b = s2;
+		this.c = s3;
+	}
+	public boolean isValidTriangle() {
+		return (a+b > c && b+c > a && c+a >b);
+	}
+	public double getArea() {
+		double s = (a + b + c)/2;
+		double area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+		return area;
+	}
+	public double getPerimeter() {
+	double s = (a + b + c);
+	return s;
+	}
+}	

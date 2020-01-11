@@ -1,0 +1,20 @@
+
+public class ShapesTest {
+	public static void main(String[] args) {
+
+		BetterTriangle b = new BetterTriangle(3, 4, 5);
+		if (b.isValidTriangle()) {
+			System.out.println("Area when all three sides are given: " + b.getArea());
+			System.out.println(b.getPerimeter());
+		} else
+			System.out.println("Invalid Triangle");
+	}
+		Square c = new Square(2,2,2,2);
+		if(c.isValidSquare()) {
+			System.out.println("Area when all four sides are given: " + c.getArea());
+			System.out.println(c.getPerimeter());
+		} else
+			System.out.println("Invalid Square");
+
+
+}

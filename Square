@@ -1,0 +1,24 @@
+
+public class Square {
+	double a;
+	double b;
+	double c;
+	double d;
+	
+	public Square(double s1, double s2, double s3, double s4) {
+		this.a = s1;
+		this.b = s2;
+		this.c = s3;
+		this.d = s4;
+	}
+	public boolean isValidSquare() {
+		return(a==b && b==c && c==d);
+	}
+	public double getArea() {
+		double area = Math.pow(a, 2);
+		return area;
+	}
+	public double getPerimeter() {
+		double s = (a+b+c+d);
+		return s;
+	}

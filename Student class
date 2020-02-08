@@ -1,0 +1,17 @@
+
+public class Student {
+
+	String name;
+	int zipCode;
+	
+	public Student(String name, int zip) {
+		this.name = name;
+		this.zipCode = zipCode;
+	}
+	
+	public String toString() {
+		return name + "/t" + zipCode;
+
+	}
+
+}
